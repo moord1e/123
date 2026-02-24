@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-Старт | Платформа для начинающих</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- ШАПКА САЙТА -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">IT<span class="logo--accent">Старт</span></a>
+            <!-- Навигация -->
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#courses" class="nav__link">Курсы</a></li>
+                    <li class="nav__item"><a href="#internships" class="nav__link">Стажировки</a></li>
+                    <li class="nav__item"><a href="#advice" class="nav__link">Советы</a></li>
+                    <li class="nav__item"><a href="#community" class="nav__link">Сообщество</a></li>
+                </ul>
+            </nav>
+            <!-- Кнопка и бургер-меню -->
+            <div class="header__actions">
+                <a href="#" class="btn btn--small">Войти</a>
+                <button class="burger" id="burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ГЛАВНЫЙ ЭКРАН (HERO) -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Твой путь в IT начинается здесь</h1>
+                    <p class="hero__subtitle">Актуальные курсы, стажировки в топовых компаниях и советы от экспертов. Заряжены помочь тебе найти работу мечты.</p>
+                    <div class="hero__buttons">
+                        <a href="#" class="btn btn--primary">Начать бесплатно</a>
+                        <a href="#" class="btn btn--outline">Изучить ресурсы</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <!-- Абстрактная иллюстрация через CSS (фон) -->
+                    <div class="hero__illustration"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК КУРСОВ -->
+        <section id="courses" class="section">
+            <div class="container">
+                <h2 class="section__title">Популярные курсы <span class="section__title--light">для новичков</span></h2>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card__icon"><i class="fas fa-code"></i></div>
+                        <h3 class="card__title">Web-разработчик с нуля</h3>
+                        <p class="card__text">HTML, CSS, JavaScript, React. Научитесь создавать современные сайты.</p>
+                        <a href="#" class="card__link">Узнать больше →</a>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="card__title">Аналитик данных: Старт</h3>
+                        <p class="card__text">SQL, Python, Excel. Основы работы с данными для начинающих.</p>
+                        <a href="#" class="card__link">Узнать больше →</a>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon"><i class="fas fa-bug"></i></div>
+                        <h3 class="card__title">Тестировщик ПО (QA)</h3>
+                        <p class="card__text">Ручное тестирование, баг-трекинговые системы, основы автоматизации.</p>
+                        <a href="#" class="card__link">Узнать больше →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК СТАЖИРОВОК -->
+        <section id="internships" class="section section--gray">
+            <div class="container">
+                <h2 class="section__title">Стажировки <span class="section__title--light">и вакансии</span></h2>
+                <div class="cards cards--compact">
+                    <div class="card card--horizontal">
+                        <div class="card__content">
+                            <span class="card__badge">Яндекс</span>
+                            <h3 class="card__title">Стажер-разработчик (Backend)</h3>
+                            <p class="card__text">Оплачиваемая стажировка, работа с опытным ментором.</p>
+                        </div>
+                        <a href="#" class="btn btn--small">Откликнуться</a>
+                    </div>
+                    <div class="card card--horizontal">
+                        <div class="card__content">
+                            <span class="card__badge">Тинькофф</span>
+                            <h3 class="card__title">Junior Аналитик данных</h3>
+                            <p class="card__text">Работа с большими данными, гибкий график.</p>
+                        </div>
+                        <a href="#" class="btn btn--small">Откликнуться</a>
+                    </div>
+                    <div class="card card--horizontal">
+                        <div class="card__content">
+                            <span class="card__badge">VK</span>
+                            <h3 class="card__title">QA Стажер</h3>
+                            <p class="card__text">Тестирование мобильных приложений и веб-сервисов.</p>
+                        </div>
+                        <a href="#" class="btn btn--small">Откликнуться</a>
+                    </div>
+                </div>
+                <div class="section__footer">
+                    <a href="#" class="link-all">Смотреть все вакансии →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК КАРЬЕРНЫХ СОВЕТОВ -->
+        <section id="advice" class="section">
+            <div class="container">
+                <h2 class="section__title">Карьерные <span class="section__title--light">советы</span></h2>
+                <div class="articles">
+                    <article class="article-card">
+                        <div class="article-card__image" style="background-color: #e9d8fd;"></div>
+                        <div class="article-card__content">
+                            <h3><a href="#" class="article-card__title">Как составить резюме без опыта работы</a></h3>
+                            <p class="article-card__excerpt">5 советов, как подать свои навыки, даже если у вас нет коммерческого опыта...</p>
+                            <span class="article-card__date">15 мая 2024</span>
+                        </div>
+                    </article>
+                    <article class="article-card">
+                        <div class="article-card__image" style="background-color: #fed7d7;"></div>
+                        <div class="article-card__content">
+                            <h3><a href="#" class="article-card__title">Топ-10 вопросов на собеседовании для Junior-разработчика</a></h3>
+                            <p class="article-card__excerpt">Разбираем правильные ответы и частые ошибки новичков на технических интервью...</p>
+                            <span class="article-card__date">2 июня 2024</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК СООБЩЕСТВА (ПОДПИСКА) -->
+        <section id="community" class="section section--accent">
+            <div class="container container--narrow">
+                <h2 class="section__title section__title--white">Присоединяйся к сообществу</h2>
+                <p class="section__subtitle">Получай подборку лучших материалов для подготовки к собеседованиям и новости о стажировках раз в неделю.</p>
+                <form class="form" id="subscribeForm">
+                    <input type="email" class="form__input" placeholder="Твой email" required>
+                    <button type="submit" class="btn btn--primary btn--large">Подписаться</button>
+                </form>
+                <p class="form__note" id="formMessage"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <a href="#" class="logo">IT<span class="logo--accent">Старт</span></a>
+                <p class="footer__copy">© 2024 IT-Старт. Помощь начинающим специалистам.</p>
+            </div>
+            <ul class="footer__links">
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
